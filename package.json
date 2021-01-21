@@ -1,0 +1,33 @@
+{
+  "name": "yunip-wa-bot",
+  "version": "1.0.0",
+  "description": "Wa Bot By Yunip",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets babel-preset-env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "watch": "src",
+    "ext": "js",
+    "ignore": [
+      "session.json"
+    ]
+  },
+  "author": "rahmat putra",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "fetch-base64": "^2.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^1.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.7"
+  }
+}
